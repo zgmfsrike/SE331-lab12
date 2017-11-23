@@ -3,6 +3,7 @@ import {RouterModule, Routes}  from '@angular/router';
 import {StudentsComponent} from './list/students.component';
 import {StudentsAddComponent} from './add/students.add.component';
 import {StudentsViewComponent} from './view/students.view.component';
+import {NewComponent} from './new-component/new-component.component';
 
 const studentRoutes: Routes = [
   {path: 'detail/:id',component:StudentsViewComponent},
@@ -24,11 +25,13 @@ const studentRoutes: Routes = [
   },
   {path: 'add', component: StudentsAddComponent},
   {path: 'list', component: StudentsComponent},
+  {path: 'new',component:NewComponent},
   {
     path: '',
-    redirectTo: '/list',
+    redirectTo: '/new',
     pathMatch: 'full'
   }
+
 ];
 
 @NgModule({

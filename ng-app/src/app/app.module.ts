@@ -21,6 +21,7 @@ import {AddCourseComponent} from './course/add-course/add-course.component';
 import {CourseServerService} from './service/course-server.service';
 import { LoginComponent } from './login/login.component';
 import {AuthenticationService} from './service/authentication.service';
+import { NewComponent } from './students/new-component/new-component.component';
 
 @NgModule({
   declarations: [AppComponent,
@@ -31,7 +32,8 @@ import {AuthenticationService} from './service/authentication.service';
     CourseListComponent,
     ListCourseComponent,
     AddCourseComponent,
-    LoginComponent],
+    LoginComponent,
+    NewComponent],
   imports: [BrowserModule, FormsModule, HttpModule,
     StudentRoutingModule, CourseRoutingModule, AppRoutingModule],
   bootstrap: [AppComponent],
